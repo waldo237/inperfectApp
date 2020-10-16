@@ -59,12 +59,12 @@
   "author": "Waldo Milanes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imranhsayed/gatsby-wordpress-themes/issues"
+    "url": "https://github.com/waldo237/inperfectApp/issues"
   },
-  "homepage": "https://github.com/imranhsayed/gatsby-wordpress-themes#readme",
+  "homepage": "https://github.com/waldo237/inperfectApp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imranhsayed/gatsby-wordpress-themes.git"
+    "url": "git+https://github.com/waldo237/inperfectApp.git"
   },
   "keywords": [
     "gatsby",

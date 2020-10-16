@@ -42,7 +42,7 @@ module.exports = {
 				// This is field under which it's accessible
 				fieldName: `HWGraphQL`,
 				// Url to query from
-				url: `http://inperfect.local/graphql`,
+				url: `https://in-perfect.000webhostapp.com/graphql`,
 				refetchInterval: 6000,
 			},
 		},

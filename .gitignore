@@ -88,3 +88,6 @@ Thumbs.db
 # Other
 .cache
 .env
+
+# Local Netlify folder
+.netlify

@@ -18,9 +18,9 @@ const Header = ( { data } ) => {
 			<div className="site-header">
 				<div className="site-brand">
 					<Link to="/">
-						{/* <img className="site-brand__logo" src={ siteLogoURL } width="100" height="75"
-						     alt="header logo"/> */}
-							 <h1>IN- perfect</h1>
+						<img className="site-brand__logo" src={ siteLogoURL } width="220" height="195"
+						     alt="header logo"/>
+							 {/* <h1>IN- perfect</h1> */}
 					</Link>
 					<div>
 						<h2 className="screen-reader-text site-brand__title">{ siteTitle }</h2>

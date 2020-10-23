@@ -55,13 +55,14 @@
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: $hamburger-layer-height / -2;
+  margin-top: $hamburger-layer-height / -1;
 
   &,
   &::before,
   &::after {
-    width: $hamburger-layer-width;
-    height: $hamburger-layer-height;
+    width: $hamburger-layer-width*2;
+    height: $hamburger-layer-height*1.1;
+   
     background-color: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
@@ -77,10 +78,10 @@
   }
 
   &::before {
-    top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    top: ($hamburger-layer-spacing + $hamburger-layer-height) * 4;
   }
 
   &::after {
-    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * 4;
   }
 }

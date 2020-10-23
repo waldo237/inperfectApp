@@ -56,7 +56,7 @@ const Footer = ( { data } ) => {
 					{
 						socialLinksData.length ?
 							<ul className="social-links">
-								{ socialLinksData.map( socialLink => (
+					 			{ socialLinksData.map( socialLink => (
 									<li key={ socialLink.iconName }>
 										<a href={ socialLink.iconUrl } target="_blank" rel="noreferrer">
 											{ 'facebook' === socialLink.iconName ? <FacebookIcon/> : null }

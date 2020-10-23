@@ -10,14 +10,14 @@
 		margin-top: 0;
 	}
 	&__description {
+		color: $color__text;
 		font-size: 18px;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		overflow: hidden;
 		-webkit-box-orient: vertical;
-
 		@media only screen and ( min-width: $tablet ) {
-			font-size: 24px;
+			font-size: 1.2em;
 		}
 	}
 
@@ -26,6 +26,16 @@
 .hero-left {
 	margin-bottom: 50px;
 	margin-right: 50px;
+	h2{
+		font-weight: 800;
+		font-size: 3em;
+		font-style: inherit;
+		color: var(--color__secondary);
+	}
+	button{
+		width: 100%;
+		margin-top: 20px;
+	}
 	@media only screen and ( min-width: $tablet ) {
 		margin-right: 100px;
 		width: 392px;

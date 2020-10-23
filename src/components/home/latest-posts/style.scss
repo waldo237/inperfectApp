@@ -4,6 +4,11 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #f5f5f5;
+	color:var( --color__secondary);
+	transition: 0.5s ease-in-out;
+	h2{
+		font-weight: 600;
+	}
 	&__wrap {
 		@media only screen and ( min-width: $tablet ) {
 			display: flex;
@@ -15,6 +20,7 @@
 
 .latest-post-section {
 	background-color: $white;
+	color: var(--black);
 	box-shadow: 5px 5px 20px 0 #cbcbcb;
 	border-radius: 5px;
 	@media only screen and ( max-width: $tablet ) {
@@ -46,6 +52,44 @@
 
 		p {
 			margin: 0;
+			
 		}
 	}
+	&:hover{
+		background: darken($color: #0000001a, $amount: 1);
+		transform: scale(1.0.1);
+		transform-origin: center center;
+		animation: zoom 5s;
+		max-width: 100%;
+		
+	}
+	
+}
+.view-all-wrap{
+	button{
+		border: $gray solid 2px;
+		background: var(--black);
+		color:var(--color__primary);
+		font-weight: 600;
+		transition: .5s ease-in-out all;
+		&:hover{
+			background: lighten($color: #ffffff43, $amount: 1);
+			color: darken($color: rgba(0, 0, 0, 0.364), $amount: 1);
+		}
+	}
+}
+
+@keyframes zoom {
+0% {
+  transform: scale(1);
+  
+}
+50% {
+  transform: scale(1.05);
+  /* equals 105% */
+  width: -10px;
+}
+100% {
+  transform: scale(1);
+}
 }

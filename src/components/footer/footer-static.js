@@ -52,7 +52,7 @@ const Footer = ( { data } ) => {
 
 				{/*	Bottom section*/}
 				<div className="footer__bottom">
-					{ copyrightText ? <div className="copyright-text">{ copyrightText }</div> : <div className="copyright-text">Codeytek Academy 2020</div> }
+					{ copyrightText ? <div className="copyright-text">{ copyrightText }</div> : <div className="copyright-text">Inperfect.ca</div> }
 					{
 						socialLinksData.length ?
 							<ul className="social-links">
@@ -80,7 +80,7 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-	copyrightText: `Codeytek Academy ${ new Date().getFullYear() }`,
+	copyrightText: `&#9400;Inperfect  ${ new Date().getFullYear() } - Developed by Waldo milanes &reg;`,
 };
 
 /**

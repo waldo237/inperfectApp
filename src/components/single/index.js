@@ -3,7 +3,8 @@ import React from "react";
 import { isEmpty } from 'lodash';
 import './style.scss';
 import Img from 'gatsby-image';
-
+import CommentForm from '../comments/comment-form';
+import CommentList from '../comments/comment-list';
 const Single = ( { data } ) => {
 
 	if ( isEmpty( data ) ) {
@@ -32,6 +33,8 @@ const Single = ( { data } ) => {
 						dangerouslySetInnerHTML={{ __html: content }}
 					/>
 					{/* .entry-content */}
+					<CommentForm postId={id} />
+					<CommentList postId={id} />
 				</article>
 				<aside className="aside">
 					{/* Taxonomy Widget */}

@@ -29,16 +29,23 @@ const Search = props => {
     : config.searchSection.searchPlaceholderTxt
 
   return !isEmpty(props.data) ? (
-    <div
-      className="search-section"
-      style={{
-        background: `url( ${backgroundURL} )`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      backgroundColor: "var(--color__secondary",
-      filter: "contrast(110%) sepia(100%)  hue-rotate(336deg)"
-      }}
-    >
+
+      <div
+        className="search-section image"
+        style={{
+          background: `url( ${backgroundURL} )`,
+          height: "40px",
+          zIndex: "-2",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundColor: "var(--black)",
+          transformOrigin: "center center",
+          animation: "zoom 30s infinite",
+          maxWidth: "100%",
+        }}
+      >
+
+   
       {/* Search */}
       <ClientSearch
         posts={posts}
@@ -50,6 +57,8 @@ const Search = props => {
       {!isEmpty(taxonomies) ? (
         <div className="search-section__categories">
           {taxonomies.map((term, index) => (
+       
+            <Link to={term.uri}>
             <div key={term.uri} className="search-section__category">
               {!isEmpty(taxonomyIcons[index].sourceUrl) ? (
                 <div className="search-section__category-icon">
@@ -66,8 +75,10 @@ const Search = props => {
                   />
                 </div>
               )}
-              {term.name ? <Link to={term.uri}>{term.name}</Link> : ""}
+              
             </div>
+           <p className="term">{term.name}</p> 
+           </Link> 
           ))}
         </div>
       ) : (

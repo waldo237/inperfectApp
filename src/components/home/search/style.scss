@@ -8,28 +8,24 @@
   background-repeat: no-repeat;
   min-height: 450px;
   padding: 50px 10px;
-  
+  overflow-x:hidden; 
+  a{
+    color: $white;
+     
+    margin-top: 20px;
+    display: block;
+  }
   &__category {
     padding-left: 10px;
     padding-right: 10px;
-    a {
-      color: $white;
-      margin-top: 20px;
-      display: block;
-    }
-
-    a:hover {
-      opacity: 0.3;
-      transition: 0.3s;
-    }
   }
-
+  
   &__categories {
     display: flex;
     text-align: center;
     padding-top: 150px;
   }
-
+  
   &__category-icon {
     text-align: center;
     width: 100px;
@@ -38,8 +34,16 @@
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 4px;
+    transition: .5s all ease-in-out;
     img {
       width: 50px;
     }
+     &:hover, a{
+      background: darken($color: #00000034, $amount: 1);
+    }
   }
+
 }
+
+
+

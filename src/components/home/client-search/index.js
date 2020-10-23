@@ -120,8 +120,8 @@ class ClientSearch extends Component {
   handleSubmit = e => {
     e.preventDefault()
   }
-
   render() {
+   
     const { searchResults, searchQuery } = this.state
     const { placeholder } = this.props
 
@@ -131,7 +131,7 @@ class ClientSearch extends Component {
       <>
         <form className="search-form" onSubmit={this.handleSubmit}>
           <label htmlFor="Search" className="screen-reader-text">
-            Enter your search here
+          ` Enter your search here
           </label>
           <input
             id="Search"
@@ -143,6 +143,7 @@ class ClientSearch extends Component {
           />
           <SearchResults queryResults={queryResults} />
         </form>
+        
       </>
     )
   }

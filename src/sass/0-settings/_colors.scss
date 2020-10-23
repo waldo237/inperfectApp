@@ -1,9 +1,9 @@
 $white: #f0f2f1;
-$black: #000000;
+$black: #1f1c20;
 $color__body: #fff;
-$gray: #ccc;
-$color__primary: #dbcbc0;
-$color__secondary:  #555;
+$gray: #c3adaa;
+$color__primary: #d9ad9b;
+$color__secondary:   #8a7a7a;
 $color__text: #555;
 
 /* Borders */
@@ -16,4 +16,6 @@ $color__menu-border: #757575;
 $color__box-shadow: #f8f8f8;
 :root{
     --color__secondary: #555;
+    --color__primary: #d9ad9b;
+    --black: #1f1c20;
 }

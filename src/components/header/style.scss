@@ -8,6 +8,26 @@
 	@include mq( medium ) {
 		padding-right: $container-padding;
 	}
+	
+}
+.activeClass {
+	border: 2px solid $color__menu-border;
+	border-radius: 45px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 16px 0 0 16px;
+
+	@include mq( large ) {
+		margin: 0;
+		margin-left: 13px;
+	}
+
+	a {
+		padding: 4px 0;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .site-header {
@@ -81,20 +101,25 @@
 	// Main menu list
 	.header-nav__menu-item {
 		padding: 4px 16px;
-		color: #757575;
 		position: relative;
-		border: 1px solid $color__border;
+		font-size: .9em;
 		transition: 0.3s;
-
+		color: $black;
+		font-weight: 600;
+		&:hover{
+			color: lighten($color:  #d9ad9b, $amount: 0)
+		}
 		@include mq( $until: large  ) {
 			svg {
 				display: none;
+				color: $black;
 			}
 		}
 
 		.header-nav__toggle-menu-btn {
 			padding-left: 3px;
 			margin-top: -6px;
+			
 		}
 
 		&.menu-has-children .header-nav__toggle-menu-btn::after {
@@ -121,28 +146,10 @@
 			border: none;
 		}
 
-		&:last-child {
-			border: 2px solid $color__menu-border;
-			border-radius: 45px;
-			width: 100px;
-			text-align: center;
-			vertical-align: middle;
-			margin: 16px 0 0 16px;
-
-			@include mq( large ) {
-				margin: 0;
-				margin-left: 13px;
-			}
-
-			a {
-				padding: 4px 0;
-				display: flex;
-				justify-content: center;
-			}
-		}
-
+		
 		&:hover .header-nav__submenu {
 			display: block;
+		
 		}
 
 		// Main Menu link

@@ -69,6 +69,7 @@ const Nav = ( props ) => {
 								const parentMenuLink = (
 									<Link
 										className="header-nav__menu-link"
+										activeClassName="activeClass"
 										to={ normalizePath( menu.node.url ) }
 									>
 										{ menu.node.label }
@@ -117,6 +118,7 @@ const Nav = ( props ) => {
 															key={ subMenu.node.menuItemId }
 														>
 															<Link
+															activeClassName="activeClass"
 																className="header-nav__submenu-link"
 																to={ normalizePath( subMenu.node.url ) }
 															>

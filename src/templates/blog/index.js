@@ -8,6 +8,7 @@ const BlogTemplate = ( { pageContext } ) => {
 	return (
 		<Layout>
 			<Blog pageContext={ pageContext } pageTitle="Blog" />
+			
 		</Layout>
 	)
 }

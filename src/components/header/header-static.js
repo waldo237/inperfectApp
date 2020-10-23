@@ -6,7 +6,7 @@ import Link from 'gatsby-link';
  */
 import Nav from './nav';
 import './style.scss';
-import defaultSiteLogoUrl from '../../images/logo.png';
+import defaultSiteLogoUrl from '../../images/blackLogo.png';
 
 const Header = ( { data } ) => {
 
@@ -18,12 +18,12 @@ const Header = ( { data } ) => {
 			<div className="site-header">
 				<div className="site-brand">
 					<Link to="/">
-						<img className="site-brand__logo" src={ siteLogoURL } width="220" height="195"
+						<img className="site-brand__logo" src={ siteLogoURL } width="70" height="70"
 						     alt="header logo"/>
 							 {/* <h1>IN- perfect</h1> */}
 					</Link>
 					<div>
-						<h2 className="screen-reader-text site-brand__title">{ siteTitle }</h2>
+					<h2 className="screen-reader-text site-brand__title">	{ siteTitle }</h2>
 						<p className="site-brand__description">{ siteTagLine }</p>
 					</div>
 				</div>

@@ -1,0 +1,20 @@
+.comment-form{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: center;
+    max-width: 600px;
+    &__autor-label,
+    &__url-label,
+    &__comment-label,
+    &__email-label{
+        margin: 30px 0 5px;
+      
+    }
+    &__submit-btn{
+       margin: 40px 0;
+       justify-self: flex-start;
+       background: var(--color__primary);
+    }
+  
+} 

@@ -3,8 +3,12 @@
 .featured-post-section {
 	border-radius: 5px;
 	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	box-shadow: 5px 5px 20px 0 #cbcbcb;
+	transition: .4s all ease-in-out;
+	&:hover{
+		box-shadow: 5px 7px 20px 0 #999999;
+	}
 	@media only screen and ( min-width: $tablet ) {
 		display: flex;
 		&__img {
@@ -21,10 +25,17 @@
 		}
 	}
 	&__content {
+		h3{
+			font-weight: 900;
+			font-size: 2em;
+			color: var(--color__secondary);
+
+		}
 		border-radius: 5px;
 		width: 100%;
 		padding: 20px;
 		background: $white;
+		
 	}
 	&__excerpt {
 		min-height: 64px;
@@ -42,5 +53,10 @@
 	&__date,
 	&__read-more {
 		color: $color__secondary;
+		transition: .6s 0s all linear;
+		&:hover{
+			color: darken($color:  #dc9a80, $amount: 4);
+			font-weight: 600;
+		}
 	}
 }

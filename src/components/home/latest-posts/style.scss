@@ -82,12 +82,9 @@
 @keyframes zoom {
 0% {
   transform: scale(1);
-  
 }
 50% {
   transform: scale(1.05);
-  /* equals 105% */
-  width: -10px;
 }
 100% {
   transform: scale(1);

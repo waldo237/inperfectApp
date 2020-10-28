@@ -106,9 +106,7 @@
 		transition: 0.3s;
 		color: $black;
 		font-weight: 600;
-		&:hover{
-			color: lighten($color:  #d9ad9b, $amount: 0)
-		}
+	
 		@include mq( $until: large  ) {
 			svg {
 				display: none;
@@ -157,7 +155,10 @@
 			display: flex;
 			padding: 10px;
 			color: $color__text;
-
+			transition: .4s all ease-in-out;
+			&:hover, &:active{
+				color: var(--color__primary)
+			}
 			@include mq( large ) {
 				display: inline-block;
 				padding: 0;

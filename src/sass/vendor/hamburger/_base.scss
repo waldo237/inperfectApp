@@ -56,14 +56,12 @@
   display: block;
   top: 50%;
   margin-top: $hamburger-layer-height ;
-
   &,
   &::before,
   &::after {
     width: $hamburger-layer-width*2;
     height: $hamburger-layer-height;
-   
-    background-color: $hamburger-layer-color;
+    background-color: var(--color__secondary);
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
@@ -78,10 +76,10 @@
   }
 
   &::before {
-    top: ($hamburger-layer-spacing + $hamburger-layer-height) * 4;
+    top: ($hamburger-layer-spacing + $hamburger-layer-height) ;
   }
 
   &::after {
-    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * 4;
+    bottom: ($hamburger-layer-spacing + $hamburger-layer-height);
   }
 }

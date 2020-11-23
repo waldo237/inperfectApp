@@ -1,7 +1,7 @@
 export default {
 	"featuredPosts": [
 		{
-			"id": "cG9zddoyNDE=",
+			"id": "cG9zddoyNDE=", 
 			"title": "The wonderful journey",
 			"excerpt": "<p>This shares my experiences about the unforgetfull cities of the world</p>\n",
 			"content": "This is content",

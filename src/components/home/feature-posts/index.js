@@ -5,7 +5,7 @@ import { isEmpty } from 'lodash';
 import Post from '../../blog-list/post';
 import './style.scss';
 
-const FeaturedPosts = ( props ) => {
+const FeaturedPosts = ( props ) => { 
 
 	const { featuredPosts, heading } = props.data;
 

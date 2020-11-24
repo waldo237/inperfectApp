@@ -13,7 +13,7 @@ exports.createPages = async ( { actions, graphql } ) => {
 	await createBlogPage( { actions, graphql } );
 	await createArchivePage( { actions, graphql } );
 };
-
+ 
 /**
  * Since the node_modules ( packages ) live outside the theme directory, making an alias for them.
  *

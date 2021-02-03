@@ -8,6 +8,7 @@ import CommentList from '../comments/comment-list';
 const Single = ( { data } ) => {
 
 	if ( isEmpty( data ) ) {
+		
 		return null;
 	}
 
